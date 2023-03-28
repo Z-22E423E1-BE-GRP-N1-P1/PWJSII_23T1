@@ -5,11 +5,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <main id="app"></main>
+  <header>
+    <h1>Black Jack</h1>
+  </header>
+  <main>
+    <div id="divMsg"></div>
+
+    <div id="divMaoBanca"></div>
+    <div id="divMaoJogador"></div>
+
+    <div class="game_menu">
+      <button id="btnPegarCarta" class="btn red" onclick="pegarUmaCarta()">Pegar</button>
+      <button class="btn orange" onclick="passarJogada()">Passar</button>
+      <button class="btn blue" onclick="reiniciarJogo()">Reiniciar</button>
+    </div>
+  </main>
   <script src="script.js"></script>
 </body>
 
